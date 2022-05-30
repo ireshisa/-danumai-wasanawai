@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menuactivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bgo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:padding="0dp"
+         android:layout_marginBottom="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/quiz"
+                    style="@style/button_etutor"
+                    android:layout_width="326dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/quiz_small"
+                    android:drawableRight="@drawable/quiz_small"
+                    android:text="දැනුමයි දිනුමයි" />
+
+
+                <TextView
+                    android:id="@+id/Great_Personalities"
+                    style="@style/button_etutor"
+                    android:layout_marginTop="20dp"
+                    android:text="ශ්‍රේෂ්ඨ චරිත" />
+
+
+                <TextView
+                    android:id="@+id/Literature"
+                    style="@style/button_etutor"
+                    android:layout_marginTop="20dp"
+                    android:text=" සාහිත්‍ය" />
+
+                <TextView
+                    android:id="@+id/World_and_Politics"
+                    style="@style/button_etutor"
+                    android:layout_marginTop="20dp"
+                    android:text="ඉතිහාසය හා දේශපාලනය" />
+
+                <TextView
+                    android:id="@+id/Geography"
+                    style="@style/button_etutor"
+                    android:layout_marginTop="20dp"
+                    android:shadowRadius="500"
+                    android:text="භූගෝලය" />
+
+                <TextView
+                    android:id="@+id/Awards"
+                    style="@style/button_etutor"
+                    android:layout_marginTop="20dp"
+                    android:text="සම්මාන"
+
+                    />
+
+
+
+
+
+                <TextView
+                    android:id="@+id/History"
+                    style="@style/button_etutor"
+                    android:layout_marginTop="20dp"
+                    android:text="ඉතිහාසය" />
+
+
+
+
+
+                <TextView
+                    android:id="@+id/Others"
+                    style="@style/button_etutor"
+                    android:layout_marginTop="20dp"
+                    android:text="වෙනත්  " />
+
+
+                <TextView
+                    android:id="@+id/result"
+                    style="@style/button_etutor"
+                    android:layout_marginTop="20dp"
+                    android:text="ප්‍රතිඵල" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</FrameLayout>

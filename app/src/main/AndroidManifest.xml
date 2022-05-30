@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.universl.danumaiwasanawai">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DanumaiWasanawai">
+        <activity
+            android:name=".Quizresult.QuizresultItemView"
+            android:exported="false" />
+        <activity
+            android:name=".Quizresult.Quizresult"
+            android:exported="false" />
+        <activity
+            android:name=".quiz.QuizResultActivity"
+            android:exported="false"
+            android:parentActivityName=".Menuactivity" />
+        <activity
+            android:name=".quiz.QuizActivity"
+            android:exported="false"
+            android:parentActivityName=".Menuactivity" />
+        <activity
+            android:name=".quiz.QuizstartActivity"
+            android:exported="false"
+            android:parentActivityName=".Menuactivity" />
+        <activity
+            android:name=".Adapter.QuizAdapter"
+            android:exported="false"
+            android:parentActivityName=".Menuactivity"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".QuizLordActivity"
+            android:exported="false"
+            android:parentActivityName=".Menuactivity" />
+        <activity
+            android:name=".BookoneActivity2"
+            android:exported="false"
+            android:parentActivityName=".Menuactivity" />
+        <activity
+            android:name=".HistrylistActivity"
+            android:parentActivityName=".Menuactivity" />
+        <activity android:name=".Menuactivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:parentActivityName=".Menuactivity" />
+        <activity
+            android:name=".MainActivity"
+            android:parentActivityName=".Menuactivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

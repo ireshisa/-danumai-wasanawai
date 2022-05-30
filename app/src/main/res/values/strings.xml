@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Danumai wasanawai</string>
+    <string name="sinin">SININ</string>
+    <string name="welcome">Welcome</string>
+    <string name="string_name" />
+    <string name="mail">Mail</string>
+    <string name="logout">Logout</string>
+    <string name="todo">TODO</string>
+    <string name="textview">TextView</string>
+
+</resources>
