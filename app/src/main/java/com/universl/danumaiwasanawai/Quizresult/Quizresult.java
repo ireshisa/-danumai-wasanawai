@@ -158,14 +158,13 @@ package com.universl.danumaiwasanawai.Quizresult;
     @Override
     public void onQuizClick(int position) {
 
-
         Intent intent = new Intent(Quizresult.this, QuizresultItemView.class);
-       intent.putExtra("Quiz_title", quizList.get(position).getQuiz_title());
-          intent.putExtra("Quiz_id", quizList.get(position).getQuiz_id());
+        intent.putExtra("Quiz_title", quizList.get(position).getQuiz_title());
+        intent.putExtra("Quiz_id", quizList.get(position).getQuiz_id());
         intent.putExtra("Quiz_time_hours", quizList.get(position).getQuiz_time_hours());
-       intent.putExtra("Quiz_time_minutes", quizList.get(position).getQuiz_time_minutes());
-         startActivity(intent);
-      finish();
+        intent.putExtra("Quiz_time_minutes", quizList.get(position).getQuiz_time_minutes());
+        startActivity(intent);
+
 
 
     }

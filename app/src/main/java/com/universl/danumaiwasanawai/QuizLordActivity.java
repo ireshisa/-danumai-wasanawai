@@ -175,7 +175,7 @@ public class QuizLordActivity extends AppCompatActivity implements QuizAdapter.o
                     startActivity(intent);
                     finish();
                 } else {
-                    Toast.makeText(QuizLordActivity.this, "you have already done.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(QuizLordActivity.this, "you have already done.", Toast.LENGTH_SHORT).show();
 
                 }
 

@@ -23,49 +23,63 @@
         android:theme="@style/Theme.DanumaiWasanawai">
         <activity
             android:name=".Quizresult.QuizresultItemView"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Menuactivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Quizresult.Quizresult"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".quiz.QuizResultActivity"
             android:exported="false"
-            android:parentActivityName=".Menuactivity" />
+            android:parentActivityName=".Menuactivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".quiz.QuizActivity"
             android:exported="false"
-            android:parentActivityName=".Menuactivity" />
+            android:parentActivityName=".Menuactivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".quiz.QuizstartActivity"
             android:exported="false"
-            android:parentActivityName=".Menuactivity" />
+            android:parentActivityName=".Menuactivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Adapter.QuizAdapter"
             android:exported="false"
             android:parentActivityName=".Menuactivity"
-            tools:ignore="Instantiatable" />
+            tools:ignore="Instantiatable"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".QuizLordActivity"
             android:exported="false"
-            android:parentActivityName=".Menuactivity" />
+            android:parentActivityName=".Menuactivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".BookoneActivity2"
             android:exported="false"
-            android:parentActivityName=".Menuactivity" />
+            android:parentActivityName=".Menuactivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".HistrylistActivity"
-            android:parentActivityName=".Menuactivity" />
-        <activity android:name=".Menuactivity" />
+            android:parentActivityName=".Menuactivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Menuactivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".HomeActivity"
-            android:parentActivityName=".Menuactivity" />
+            android:parentActivityName=".Menuactivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".MainActivity"
-            android:parentActivityName=".Menuactivity" />
+            android:parentActivityName=".Menuactivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".SplashScreen"
             android:exported="true"
-            android:theme="@style/SplashScreen">
+            android:theme="@style/SplashScreen"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
