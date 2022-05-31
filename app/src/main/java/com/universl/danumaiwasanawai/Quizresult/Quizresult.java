@@ -53,7 +53,7 @@ package com.universl.danumaiwasanawai.Quizresult;
         setContentView(R.layout.activity_qiz_result);
 
 
-        setTitle("ප්\u200Dරශ්නාවලිය ප්\u200Dරතිඵල");
+        setTitle("ප්\u200Dරතිඵල සටහන");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_baseline_home_24);

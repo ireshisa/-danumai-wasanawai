@@ -25,6 +25,8 @@ public class Menuactivity extends AppCompatActivity implements View.OnClickListe
 
     private TextView quiz;
     private String catagory;
+    private String menuname;
+
     GoogleSignInOptions gso;
     GoogleSignInClient gsc;
 
@@ -35,7 +37,7 @@ public class Menuactivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menuactivity);
-        setTitle("දැනුමයි දිනුමයි");
+        setTitle("දැනුමයි වාසනාවයි");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_baseline_home_24);
@@ -62,7 +64,7 @@ public class Menuactivity extends AppCompatActivity implements View.OnClickListe
 
 
         quiz = findViewById(R.id.quiz);
-        TextView button8 = findViewById(R.id.result);
+//        TextView button8 = findViewById(R.id.result);
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
@@ -86,13 +88,13 @@ public class Menuactivity extends AppCompatActivity implements View.OnClickListe
         });
 
 
-        button8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Quizresult.class);
-                startActivity(intent);
-            }
-        });
+//        button8.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(getApplicationContext(), Quizresult.class);
+//                startActivity(intent);
+//            }
+//        });
 
 
 
@@ -157,30 +159,44 @@ public class Menuactivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.Awards:
                 catagory = "Awards";
+                menuname="සම්මාන";
                 break;
             case R.id.Geography:
                 catagory = "Geography";
+                menuname="භූගෝලය";
                 break;
             case R.id.Great_Personalities:
                 catagory = "Great_Personalities";
+                menuname="ශ්\u200Dරේෂ්ඨ චරිත";
                 break;
             case R.id.History:
                 catagory = "History";
+                menuname="ඉතිහාසය ";
                 break;
             case R.id.Literature:
                 catagory = "Literature";
+                menuname="සාහිත්\u200Dය";
                 break;
             case R.id.World_and_Politics:
                 catagory = "World_and_Politics";
+                menuname="ඉතිහාසය හා දේශපාලනය";
                 break;
             case R.id.Others:
                 catagory = "Others";
+                menuname="වෙනත්";
                 break;
         }
 
 
+
+
+
+
+
+
         Intent i = new Intent(this, HistrylistActivity.class);
         i.putExtra("catagory", catagory);
+        i.putExtra("menuname", menuname);
         startActivity(i);
 
 

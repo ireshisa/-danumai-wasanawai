@@ -62,7 +62,7 @@ public class QuizresultItemView extends AppCompatActivity implements QuizResultI
         Quiz_id = intent.getStringExtra("Quiz_id");
         Quiz_title= intent.getStringExtra("Quiz_title");
 
-        setTitle("ප්\u200Dරශ්නාවලිය ප්\u200Dරතිඵල "+ Quiz_title);
+        setTitle("ලකුණු පුවරුව "+ Quiz_title);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_baseline_home_24);

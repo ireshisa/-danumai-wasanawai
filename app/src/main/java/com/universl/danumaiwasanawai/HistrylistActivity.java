@@ -37,13 +37,14 @@ public class HistrylistActivity extends AppCompatActivity {
     PostAdapter adapter;
     List<Posts> postsList = new ArrayList<>();
     private String catagoryvalue;
+    private String menuname;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
              catagoryvalue = extras.getString("catagory");
-
+             menuname = extras.getString("menuname");
         }
 
 
@@ -52,7 +53,7 @@ public class HistrylistActivity extends AppCompatActivity {
         setContentView(R.layout.activity_histrylist);
 
 
-        setTitle("දැනුමයි දිනුමයි ");
+        setTitle(menuname);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);

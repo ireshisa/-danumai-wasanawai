@@ -31,16 +31,18 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
+
                 <TextView
                     android:id="@+id/quiz"
                     style="@style/button_etutor"
                     android:layout_width="326dp"
-                    android:layout_height="70dp"
+                    android:layout_height="75dp"
                     android:layout_marginTop="20dp"
                     android:drawableLeft="@drawable/quiz_small"
                     android:drawableRight="@drawable/quiz_small"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
                     android:text="දැනුමයි දිනුමයි" />
-
 
                 <TextView
                     android:id="@+id/Great_Personalities"
@@ -97,11 +99,11 @@
                     android:text="වෙනත්  " />
 
 
-                <TextView
-                    android:id="@+id/result"
-                    style="@style/button_etutor"
-                    android:layout_marginTop="20dp"
-                    android:text="ප්‍රතිඵල" />
+<!--                <TextView-->
+<!--                    android:id="@+id/result"-->
+<!--                    style="@style/button_etutor"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:text="ප්‍රතිඵල" />-->
 
             </LinearLayout>
 

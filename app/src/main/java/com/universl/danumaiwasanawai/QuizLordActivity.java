@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -24,6 +25,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.universl.danumaiwasanawai.Adapter.PostAdapter;
 import com.universl.danumaiwasanawai.Adapter.QuizAdapter;
+import com.universl.danumaiwasanawai.Quizresult.Quizresult;
+import com.universl.danumaiwasanawai.Quizresult.QuizresultItemView;
 import com.universl.danumaiwasanawai.model.Posts;
 import com.universl.danumaiwasanawai.model.Quiz;
 import com.universl.danumaiwasanawai.model.User;
@@ -46,13 +49,21 @@ public class QuizLordActivity extends AppCompatActivity implements QuizAdapter.o
     List<Quiz> quizList = new ArrayList<>();
     String gogleid;
 
+
+    String activity_quiz_id;
+    String Quiz_title;
+    String VQuiz_id;
+    String VQuiz_time_hours;
+    String VQuiz_time_minutes;
+    TextView button8;
+    TextView Literature;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
 
-        setTitle("ප්\u200Dරශ්නාවලිය");
+        setTitle("දැනුමයි දිනුමයි");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_baseline_home_24);
@@ -60,6 +71,36 @@ public class QuizLordActivity extends AppCompatActivity implements QuizAdapter.o
 
         Intent intent = getIntent();
         gogleid = intent.getStringExtra("gogleid");
+
+
+
+         button8 = findViewById(R.id.resulttext);
+       Literature = findViewById(R.id.Literature);
+
+        Literature.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(QuizLordActivity.this, QuizresultItemView.class);
+                intent.putExtra("Quiz_title", Quiz_title);
+                intent.putExtra("Quiz_id", VQuiz_id);
+                intent.putExtra("Quiz_time_hours", VQuiz_time_hours);
+                intent.putExtra("Quiz_time_minutes", VQuiz_time_minutes);
+                startActivity(intent);
+            }
+        });
+
+
+        button8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Quizresult.class);
+                startActivity(intent);
+            }
+        });
+        Literature.setVisibility(View.GONE);
+                button8.setVisibility(View.GONE);
+
 
 
         recyclerView = findViewById(R.id.recyclerView);
@@ -133,14 +174,24 @@ public class QuizLordActivity extends AppCompatActivity implements QuizAdapter.o
                     String responseTest = null;
                     for (Quiz quiz : qises) {
                         responseTest += quiz.alldata();
+                        activity_quiz_id=quiz.getQuiz_id();
+
+                        Quiz_title=quiz.getQuiz_title();
+                        VQuiz_id=quiz.getQuiz_id();
+                        VQuiz_time_hours=quiz.getQuiz_time_hours();
+                        VQuiz_time_minutes=quiz.getQuiz_time_minutes();
+
+
 
                     }
-                    Log.i("RESPONDQIUZ", responseTest);
+                    Log.i("RESPONDQIUZ", activity_quiz_id);
 
                     quizList.addAll(response.body());
 
                     adapter.notifyDataSetChanged();
                     progressBar.setVisibility(View.GONE);
+                    Literature.setVisibility(View.VISIBLE);
+                    button8.setVisibility(View.VISIBLE);
                 }
             }
 
