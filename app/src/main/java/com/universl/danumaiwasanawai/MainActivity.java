@@ -73,9 +73,9 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<List<User>> call, Response<List<User>> response) {
                 if (response.isSuccessful() && response.body() != null) {
 
-
+                    HomeActivity();
                 } else {
-
+                    HomeActivity();
                 }
             }
 
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             try {
                 task.getResult(ApiException.class);
-//                HomeActivity();
+                HomeActivity();
             } catch (ApiException e) {
 //                e.printStackTrace();
                 // Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
