@@ -83,11 +83,23 @@
 
 
                 <TextView
-                    android:id="@+id/History"
+                    android:id="@+id/Sri_Lanka"
                     style="@style/button_etutor"
                     android:layout_marginTop="20dp"
-                    android:text="ඉතිහාසය" />
+                    android:text="ශ්‍රී ලංකාව" />
 
+                <TextView
+                    android:id="@+id/Sports"
+                    style="@style/button_etutor"
+                    android:layout_marginTop="20dp"
+                    android:text="ක්‍රීඩා" />
+
+
+                <TextView
+                    android:id="@+id/inventions"
+                    style="@style/button_etutor"
+                    android:layout_marginTop="20dp"
+                    android:text="නව නිපැයුම් සහ සොයාගැනීම්  " />
 
 
 
@@ -99,11 +111,8 @@
                     android:text="වෙනත්  " />
 
 
-<!--                <TextView-->
-<!--                    android:id="@+id/result"-->
-<!--                    style="@style/button_etutor"-->
-<!--                    android:layout_marginTop="20dp"-->
-<!--                    android:text="ප්‍රතිඵල" />-->
+
+
 
             </LinearLayout>
 

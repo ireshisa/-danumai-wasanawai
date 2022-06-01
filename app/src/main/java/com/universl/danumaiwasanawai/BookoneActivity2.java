@@ -27,8 +27,8 @@ public class BookoneActivity2 extends AppCompatActivity {
     WebView description;
     ImageView imageView2;
 
-
-
+    String catagory;
+ String menuname;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,10 +38,58 @@ public class BookoneActivity2 extends AppCompatActivity {
         String ArticleId = intent.getStringExtra("ArticleId");
         String ArticleImg = intent.getStringExtra("ArticleImg");
         String ArticleTitle = intent.getStringExtra("ArticleTitle");
+        String Category2 = intent.getStringExtra("Category");
+
+
+        switch (Category2) {
+            case "Awards":
+                catagory = "Awards";
+                menuname="සම්මාන";
+                break;
+            case "Geography":
+                catagory = "Geography";
+                menuname="භූගෝලය";
+                break;
+            case "Great_Personalities":
+                catagory = "Great_Personalities";
+                menuname="ශ්\u200Dරේෂ්ඨ චරිත";
+                break;
+            case "Sri_Lanka":
+                catagory = "Sri_Lanka";
+                menuname="ශ්\u200Dරී ලංකාව ";
+                break;
+            case "Literature":
+                catagory = "Literature";
+                menuname="සාහිත්\u200Dය";
+                break;
+            case "World_and_Politics":
+                catagory = "World_and_Politics";
+                menuname="ඉතිහාසය හා දේශපාලනය";
+                break;
+            case "Others":
+                catagory = "Others";
+                menuname="වෙනත්";
+                break;
+            case "Inventions_and_Discoveries":
+                catagory = "Inventions_and_Discoveries";
+                menuname="නව නිපැයුම් සහ සොයාගැනීම්";
+                break;
+
+            case "Sports":
+                catagory = "Sports";
+                menuname="ක්\u200Dරීඩා";
+                break;
+
+        }
+
+
+
+
+
 
         String ArticleDescription = intent.getStringExtra("ArticleDescription");
 
-        setTitle("දැනුමයි දිනුමයි ");
+        setTitle(menuname);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);

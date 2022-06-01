@@ -66,6 +66,8 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder>  {
             intent.putExtra("ArticleImg",postsList.get(position).getArticle_img());
             intent.putExtra("ArticleTitle",postsList.get(position).getArticle_title());
             intent.putExtra("ArticleDescription",postsList.get(position).getArticle_description());
+            intent.putExtra("ArticleDescription",postsList.get(position).getArticle_description());
+            intent.putExtra("Category",postsList.get(position).getCategory());
 
             itemView.getContext().startActivity(intent);
 

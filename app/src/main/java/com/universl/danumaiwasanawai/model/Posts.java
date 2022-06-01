@@ -9,6 +9,16 @@ public class Posts {
     private String article_img;
     private String article_description;
 
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    private String category;
+
     public String getArticle_img() {
         return article_img;
     }

@@ -46,11 +46,13 @@ public class Menuactivity extends AppCompatActivity implements View.OnClickListe
         TextView button1 = findViewById(R.id.Awards);
         TextView button2 = findViewById(R.id.Geography);
         TextView button3 = findViewById(R.id.Great_Personalities);
-        TextView button4 = findViewById(R.id.History);
+        TextView button4 = findViewById(R.id.Sri_Lanka);
         TextView button5 = findViewById(R.id.Literature);
         TextView button6 = findViewById(R.id.World_and_Politics);
         TextView button7 = findViewById(R.id.Others);
+        TextView button8 = findViewById(R.id.inventions);
 
+        TextView button9 = findViewById(R.id.Sports);
 
 
 
@@ -61,8 +63,8 @@ public class Menuactivity extends AppCompatActivity implements View.OnClickListe
         button5.setOnClickListener(this);
         button6.setOnClickListener(this);
         button7.setOnClickListener(this);
-
-
+        button8.setOnClickListener(this);
+        button9.setOnClickListener(this);
         quiz = findViewById(R.id.quiz);
 //        TextView button8 = findViewById(R.id.result);
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -169,9 +171,9 @@ public class Menuactivity extends AppCompatActivity implements View.OnClickListe
                 catagory = "Great_Personalities";
                 menuname="ශ්\u200Dරේෂ්ඨ චරිත";
                 break;
-            case R.id.History:
-                catagory = "History";
-                menuname="ඉතිහාසය ";
+            case R.id.Sri_Lanka:
+                catagory = "Sri_Lanka";
+                menuname="ශ්\u200Dරී ලංකාව ";
                 break;
             case R.id.Literature:
                 catagory = "Literature";
@@ -185,6 +187,16 @@ public class Menuactivity extends AppCompatActivity implements View.OnClickListe
                 catagory = "Others";
                 menuname="වෙනත්";
                 break;
+            case R.id.inventions:
+                catagory = "Inventions_and_Discoveries";
+                menuname="නව නිපැයුම් සහ සොයාගැනීම්";
+                break;
+
+            case R.id.Sports:
+                catagory = "Sports";
+                menuname="ක්\u200Dරීඩා";
+                break;
+
         }
 
 

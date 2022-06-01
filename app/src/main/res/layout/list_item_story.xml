@@ -12,7 +12,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:padding="8dp"
         android:background="@color/white"
         >
@@ -26,29 +26,31 @@
             android:textColor="@color/black"
             android:visibility="gone"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="128dp"
+             tools:layout_editor_absoluteX="128dp"
             tools:layout_editor_absoluteY="51dp" />
 
         <TextView
             android:id="@+id/tvTitle"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="15dp"
+
             android:includeFontPadding="false"
-            android:text="textView"
             android:lineSpacingExtra="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:text="textView"
+            android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintHorizontal_bias="0.644"
             app:layout_constraintStart_toEndOf="@+id/imageView5"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.37"
-            tools:ignore="MissingConstraints"
-            android:paddingLeft="5dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="5dp"
-            android:textAlignment="textStart"/>
+            app:layout_constraintVertical_bias="0.484"
+            tools:ignore="MissingConstraints" />
 
         <ImageView
             android:layout_width="57dp"
